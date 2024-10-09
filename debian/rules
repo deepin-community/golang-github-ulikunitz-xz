@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
 
+# tests require extra files from the repository
+export DH_GOLANG_INSTALL_ALL := 1
+
+override_dh_install:
+	find debian -name .gitignore -print -delete
+	rm -rfv debian/*/usr/bin
+	dh_install
+
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
