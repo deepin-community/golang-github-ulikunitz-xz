@@ -1,5 +1,33 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-ulikunitz-xz (0.5.6-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+  * Apply multi-arch hints.
+    + golang-github-ulikunitz-xz-dev: Add Multi-Arch: foreign.
+
+  [ Shengjing Zhu ]
+  * Backport patch for CVE-2021-29482.
+    Fixes readUvarint denial of service (Closes: #988243)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sun, 16 May 2021 17:10:45 +0800
+
+golang-github-ulikunitz-xz (0.5.6-1) unstable; urgency=medium
+
+  * New upstream version 0.5.6
+  * Remove unneeded Files-Excluded field in debian/copyright
+  * Apply "cme fix dpkg" fixes:
+    - Use "Build-Depends: debhelper-compat (= 12)"
+    - Bump Standards-Version to 4.4.0 (no change)
+  * Add myself to the list of Uploaders
+
+ -- Anthony Fok <foka@debian.org>  Sat, 24 Aug 2019 21:27:36 -0600
+
+golang-github-ulikunitz-xz (0.5.5-1) unstable; urgency=medium
+
+  * Initial release (Closes: #922124)
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 12 Feb 2019 17:03:51 -0500
