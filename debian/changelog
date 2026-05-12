@@ -1,3 +1,12 @@
+golang-github-ulikunitz-xz (0.5.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * Backport patch for CVE-2025-58058.
+    Fix memory exhaustion when decoding corrupted LZMA archives.
+    (Closes: #-TODO)
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 13 May 2026 00:13:20 +0800
+
 golang-github-ulikunitz-xz (0.5.6-2) unstable; urgency=medium
 
   * Team upload.
